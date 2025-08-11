@@ -1,25 +1,22 @@
 # Minikube Kubernetes App
 
-This project runs an nginx app on Kubernetes using Minikube.
+This project demonstrates deploying an nginx app to a local Kubernetes cluster using Minikube.
 
-## Steps
-1. Start Minikube  
- Command
- minikube start
+---
 
+## Steps and Commands
+
+### 1. Start Minikube
+```bash
+minikube start
 2. Deploy the app
- Commands
- kubectl apply -f deployment.yaml
- kubectl apply -f service.yaml
-
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 3. Check pods, deployments, and services
- Commands
- kubectl get pods
- kubectl get deployments
- kubectl get services
- 
+kubectl get pods
+kubectl get deployments
+kubectl get services
 4. Scale the app
- Commands
- kubectl scale deployment myapp-deployment --replicas=4
- kubectl get pods
- kubectl get deployments
+kubectl scale deployment myapp-deployment --replicas=4
+kubectl get pods
+kubectl get deployments
